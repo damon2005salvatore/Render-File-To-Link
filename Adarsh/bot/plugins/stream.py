@@ -67,7 +67,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳../**",
+                    text="**ʏᴏᴜ'ʀᴇ ʙᴀɴɴᴇᴅ..**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -90,7 +90,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="**ᴀᴅᴅ ғᴏʀᴄᴇ sᴜʙ ᴛᴏ ᴀɴʏ ᴄʜᴀɴɴᴇʟ**",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -127,7 +127,7 @@ async def private_receive_handler(c: Client, m: Message):
                                                 InlineKeyboardButton('⚡ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
-        print(f"Sleeping for {str(e.x)}s")
+        print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(e.x)}s")
         await asyncio.sleep(e.x)
         await c.send_message(chat_id=Var.BIN_CHANNEL, text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ {str(e.x)}s from [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n**𝚄𝚜𝚎𝚛 𝙸𝙳 :** `{str(m.from_user.id)}`", disable_web_page_preview=True, parse_mode="Markdown")
 
@@ -166,7 +166,7 @@ async def channel_receive_handler(bot, broadcast):
             )
         )
     except FloodWait as w:
-        print(f"Sleeping for {str(w.x)}s")
+        print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(w.x)}s")
         await asyncio.sleep(w.x)
         await bot.send_message(chat_id=Var.BIN_CHANNEL,
                              text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ {str(w.x)}s from {broadcast.chat.title}\n\n**Cʜᴀɴɴᴇʟ ID:** `{str(broadcast.chat.id)}`",
