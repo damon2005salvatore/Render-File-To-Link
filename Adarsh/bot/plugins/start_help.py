@@ -248,7 +248,7 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/Mkv_bots"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster")],
+                [InlineKeyboardButton("📣 ᴜᴘᴅᴀᴛᴇᴢ 📣", url="https://t.me/Mkv_bots"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster")],
                 [InlineKeyboardButton("🪩 sᴜʙsᴄʀɪʙᴇ 🪩", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌", url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
             ]
         )
