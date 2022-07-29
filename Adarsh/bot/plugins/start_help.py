@@ -125,7 +125,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@mkv'blasters**"
+        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡**\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@mkv'blasters**"
         await m.reply_photo(
             photo="https://telegra.ph/file/3cd15a67ad7234c2945e7.jpg",
             caption=msg_text.format(file_name, file_size, stream_link),
@@ -140,7 +140,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+            f"**#ɴᴇᴡ_ᴜsᴇʀ** : \n\n**ɴᴇᴡ ᴜsᴇʀ** [{message.from_user.first_name}](tg://user?id={message.from_user.id}) **sᴛᴀʀᴛᴇᴅ !!**"
         )
     if Var.UPDATES_CHANNEL is not None:
         try:
@@ -170,7 +170,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="**ᴀᴅᴅ ғᴏʀᴄᴇ sᴜʙ ᴛᴏ ᴀɴʏ ᴄʜᴀɴɴᴇʟ**",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -249,7 +249,7 @@ async def about_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/Mkv_bots"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster")],
-                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌", url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
+                [InlineKeyboardButton("🪩 sᴜʙsᴄʀɪʙᴇ 🪩", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌", url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
             ]
         )
     )
