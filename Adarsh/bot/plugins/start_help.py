@@ -20,7 +20,7 @@ async def start(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Started !!"
+            f"**#ɴᴇᴡᴜsᴇʀ :** \n\n**ɴᴇᴡ ᴜsᴇʀ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) sᴛᴀʀᴛᴇᴅ !!**"
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
@@ -30,7 +30,7 @@ async def start(b, m):
                 if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ../**",
+                        text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ..**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -42,7 +42,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]
                         ]
                     ),
@@ -52,7 +52,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                    text="**ᴀᴅᴅ ғᴏʀᴄᴇ sᴜʙ ᴛᴏ ᴀɴʏ ᴄʜᴀɴɴᴇʟ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -75,7 +75,7 @@ async def start(b, m):
                 if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ../**",
+                        text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ..**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -97,7 +97,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                    text="**ᴀᴅᴅ ғᴏʀᴄᴇ sᴜʙ ᴛᴏ ᴀɴʏ ᴄʜᴀɴɴᴇʟ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -125,7 +125,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@OpusTechz**"
+        msg_text = "**ᴛᴏᴜʀ ʟɪɴᴋ ɪs ɢᴇɴᴇʀᴀᴛᴇᴅ...⚡\n\n📧 ғɪʟᴇ ɴᴀᴍᴇ :-\n{}\n {}\n\n💌 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :- {}\n\n♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴇxᴘɪʀᴇᴅ ♻️\n\n@mkv'blasters**"
         await m.reply_photo(
             photo="https://telegra.ph/file/3cd15a67ad7234c2945e7.jpg",
             caption=msg_text.format(file_name, file_size, stream_link),
@@ -148,7 +148,7 @@ async def help_handler(bot, message):
             if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ../**",
+                    text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ..**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -202,7 +202,7 @@ async def about_handler(bot, message):
             if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ../**",
+                    text="**ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ..**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -224,7 +224,7 @@ async def about_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="**ᴀᴅᴅ ғᴏʀᴄᴇ sᴜʙ ᴛᴏ ᴀɴʏ ᴄʜᴀɴɴᴇʟ**",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
