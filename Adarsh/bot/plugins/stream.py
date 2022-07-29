@@ -20,27 +20,27 @@ pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
 
-@StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
+@StreamBot.on_message((filters.regex("ʟᴏɢɪɴ🔑") | filters.command("login")) & ~filters.edited, group=4)
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n If You don't know check the MY_PASS Variable in heroku \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("**ɴᴏᴡ sᴇɴᴅ ᴍᴇ ᴘᴀssᴡᴏʀᴅ.**\n\n **ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴄʜᴇᴄᴋ ᴛʜᴇ** MY_PASS **ᴠᴀʀɪᴀʙʟᴇ ɪɴ ʜᴇʀᴏᴋᴜ** \n\n(ʏᴏᴜ ᴄᴀɴ ᴜsᴇ /cancel ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴘʀᴏᴄᴇss)")
             _text = await c.listen(m.chat.id, filters=filters.text, timeout=90)
             if _text.text:
                 textp = _text.text
                 if textp=="/cancel":
-                   await ag.edit("Process Cancelled Successfully")
+                   await ag.edit("**ᴘʀᴏᴄᴇss ᴄᴀɴᴄᴇʟʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ**")
                    return
             else:
                 return
         except TimeoutError:
-            await ag.edit("I can't wait more for password, try again")
+            await ag.edit("**ɪ ᴄᴀɴ'ᴛ ᴡᴀɪᴛ ᴍᴏʀᴇ ғᴏʀ ᴘᴀssᴡᴏʀᴅ, ᴛʀʏ ᴀɢᴀɪɴ**")
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
-            ag_text = "yeah! you entered the password correctly"
+            ag_text = "**ʏᴇᴀʜ ! ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴛʜᴇ ᴘᴀssᴡᴏʀᴅ ᴄᴏʀʀᴇᴄᴛʟʏ**"
         else:
-            ag_text = "Wrong password, try again"
+            ag_text = "**ᴡʀᴏɴɢ ᴘᴀssᴡᴏʀᴅ, ᴛʀʏ ᴀɢᴀɪɴ**"
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
@@ -50,7 +50,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact @ArjunVR_AVR")
+            await m.reply_text("**ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ** \n**ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴛʜᴇ ᴘᴀssᴡᴏʀᴅ ᴄᴏɴᴛᴀᴄᴛ @themastertheblaster**")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -115,9 +115,9 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>🖥 ᴡᴀʏᴄʜ ᴏɴʟɪɴᴇ :- </b> <i><b>{}</b></i>
 
-<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n@OpusTechz</b>"""
+<b>♻️ ᴛʜɪs ʟɪɴᴋ ɪs ᴘᴇʀᴍᴀɴᴇɴᴛ ᴀɴᴅ ᴡᴏɴ'ᴛ ɢᴇᴛs ᴇxᴘɪʀᴇᴅ ♻️\n\n@mkv_blasters</b>"""
 
-        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
+        await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**sᴛʀᴇᴀᴍ ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             parse_mode="HTML", 
@@ -137,10 +137,10 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @agprojects")
+            await broadcast.reply_text("**ʟᴏɢɪɴ ғɪʀsᴛ ᴜsɪɴɢ /login ᴄᴍᴅ** \n**ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ᴛʜᴇ ᴘᴀss ? ʀᴇϙᴜᴇsᴛ ɪᴛ ғʀᴏᴍ @themastertheblaster**")
             return
         if check_pass != MY_PASS:
-            await broadcast.reply_text("Wrong password, login again")
+            await broadcast.reply_text("**ᴡʀᴏɴɢ ᴘᴀssᴡᴏʀᴅ , ʟᴏɢɪɴ ᴀɢᴀɪɴ**")
             await pass_db.delete_user(broadcast.chat.id)
             return
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
