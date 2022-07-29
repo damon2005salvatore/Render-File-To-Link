@@ -61,9 +61,9 @@ async def start(b, m):
             caption="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/MWUpdatez"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/OpusTechz")],
-                    [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://paypal.me/114912Aadil"), InlineKeyboardButton("💠 ɢɪᴛʜᴜʙ 💠", url="https://github.com/Aadhi000")],
-                    [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="https://youtube.com/opustechz")]
+                    [InlineKeyboardButton("📣 ᴜᴘᴅᴀᴛᴇᴢ 📣", url="https://t.me/Mkv_bots"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/mkv_blasters")],
+                    [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster"), InlineKeyboardButton("🍿 ᴍᴏᴠɪᴇs 🍿", url="https://t.me/mkv_movieshub")],
+                    [InlineKeyboardButton("🪩 sᴜʙsᴄʀɪʙᴇ 🪩", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton ("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌",url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
                 ]
             ),
             
@@ -181,9 +181,9 @@ async def help_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀʏᴇᴢ ⚡", url="https://t.me/MWUpdatez"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/OpusTechz")],
-                [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://paypal.me/114912Aadil"), InlineKeyboardButton("💠 ɢɪᴛʜᴜʙ 💠", url="https://github.com/Aadhi000")],
-                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="https://youtube.com/opustechz")]
+                [InlineKeyboardButton("📣 ᴜᴘᴅᴀᴛᴇᴢ 📣", url="https://t.me/Mkv_bots"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/mkv_blasters")],
+                [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster"), InlineKeyboardButton("🍿 ᴍᴏᴠɪᴇs 🍿", url="https://t.me/mkv_movieshub")],
+                [InlineKeyboardButton("🪩 sᴜʙsᴄʀɪʙᴇ 🪩", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton ("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌",url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
             ]
         )
     )
@@ -248,8 +248,8 @@ async def about_handler(bot, message):
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/MWUpdatez"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://paypal.me/114912Aadil")],
-                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="https://youtube.com/opustechz")]
+                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/Mkv_bots"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/themastertheblaster")],
+                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA"), InlineKeyboardButton("💌 ғᴏʟʟᴏᴡ ᴍᴇ 💌", url="https://instagram.com/looserz_cutz?igshid=YmMyMTA2M2Y=")]
             ]
         )
     )
