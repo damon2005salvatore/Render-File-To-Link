@@ -194,7 +194,7 @@ async def about_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+            f"**#ɴᴇᴡ_ᴜsᴇʀ** : \n\n**ɴᴇᴡ ᴜsᴇʀ** [{message.from_user.first_name}](tg://user?id={message.from_user.id}) **sᴛᴀʀᴛᴇᴅ !!**"
         )
     if Var.UPDATES_CHANNEL is not None:
         try:
