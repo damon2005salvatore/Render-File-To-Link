@@ -232,18 +232,18 @@ async def about_handler(bot, message):
             photo="https://telegra.ph/file/3cd15a67ad7234c2945e7.jpg",
             caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
 
-<b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
+<b>╭━━━━━━━〔ᴍᴋᴠ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
-┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : <a href='https://github.com/Aadhi000/File-To-Link'>ғɪʟᴇ ᴛᴏ ʟɪɴᴋ</a></b>
-┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/MWUpdatez'>ᴍᴡ ᴜᴘᴅᴀᴛᴇᴢ</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/OpusTechz'>ᴏᴘᴜs ᴛᴇᴄʜᴢ</a></b>
+┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : <a href='https://t.me/mkvstevefiletolink_bot'>🔗 sᴛᴇᴠᴇ ʟɪɴᴋ ᴛᴏ ғɪʟᴇ 🔗</a></b>
+┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/MKV_bots'>🤖 ᴍᴋᴠ ʙᴏᴛs 🤖</a></b>
+┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/mkv_blasters'>👑 ᴍᴋᴠ ʙʟᴀsᴛᴇʀs 👑</a></b>
 ┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
 ┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
 ┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ : <a href='https://github.com/Aadhi000/File-To-Link'>ғɪʟᴇ ᴛᴏ ʟɪɴᴋ</a></b>
-┣⪼<b>ʏᴏᴜᴛᴜʙᴇ : <a href='https://youtube.com/opustechz'>ᴏᴘᴜs ᴛᴇᴄʜᴢ</a></b>
+┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ : <a href='https://t.me/themastertheblaster'>😁 ᴠᴀᴀɪᴘɪʟʟᴀ ʀᴀᴀᴊᴀ 😁</a></b>
+┣⪼<b>ʏᴏᴜᴛᴜʙᴇ : <a href='https://youtube.com/channel/UCdk53DCXKoKOKgKeohUEnmA'>ʟᴏᴏsᴇʀᴢ ᴄᴜᴛᴢ</a></b>
 ┃
-<b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
+<b>╰━━━━━━━〔ᴘʟᴇᴀsᴇ sᴜᴘᴘᴏʀᴛ〕</b>""",
   parse_mode="html",
         
         reply_markup=InlineKeyboardMarkup(
