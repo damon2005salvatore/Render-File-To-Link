@@ -161,9 +161,7 @@ async def channel_receive_handler(bot, broadcast):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link),
-                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)] 
-                ]
-            )
+                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]])
         )
     except FloodWait as w:
         print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(w.x)}s")
