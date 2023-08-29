@@ -123,8 +123,8 @@ async def private_receive_handler(c: Client, m: Message):
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link), #Stream Link
-                                                InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #Online Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link), #stream_link
+                                                InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #online_link
         )
     except FloodWait as e:
         print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(e.x)}s")
@@ -160,8 +160,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link), #Stream Link
-                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #Online Link
+                    [InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link), #stream_link
+                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #online_link
         )
     except FloodWait as w:
         print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(w.x)}s")
