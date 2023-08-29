@@ -124,7 +124,7 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🖥️ ᴡᴀᴛᴄʜ 🖥️", url=stream_link), #Stream Link
-                                                InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #online Link
+                                                InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=online_link)]]) #Online Link
         )
     except FloodWait as e:
         print(f"**sʟᴇᴇᴘɪɴɢ ғᴏʀ** {str(e.x)}s")
